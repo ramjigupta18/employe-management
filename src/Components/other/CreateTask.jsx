@@ -78,16 +78,15 @@ const CreateTask = () => {
   };
 
   return (
-    <div className="p-5 bg-[#1c1c1c] mt-7 rounded">
-      <h2 className="text-2xl font-semibold mb-5">
+    <div className="p-4 sm:p-5 bg-[#1c1c1c] mt-5 sm:mt-7 rounded">
+      <h2 className="text-xl sm:text-2xl font-semibold mb-5">
         Create New Task
       </h2>
 
       <form
         onSubmit={submitHandler}
-        className="flex flex-wrap w-full items-start justify-between"
-      >
-        <div className="w-1/2">
+        className="flex flex-col md:flex-row flex-wrap w-full items-start justify-between gap-5">
+        <div className="w-full md:w-[55%]">
           <div>
             <h3 className="text-sm mb-1">
               Task Title
@@ -100,7 +99,7 @@ const CreateTask = () => {
               }
               type="text"
               placeholder="Make a UI design"
-              className="text-sm py-2 px-3 w-4/5 rounded outline-none bg-transparent border border-gray-500 mb-4"
+              className="text-sm py-2 px-3 w-full md:w-4/5 rounded outline-none bg-transparent border border-gray-500 mb-4"
             />
           </div>
 
@@ -115,7 +114,7 @@ const CreateTask = () => {
                 setTaskDate(e.target.value)
               }
               type="date"
-              className="text-sm py-2 px-3 w-4/5 rounded outline-none bg-transparent border border-gray-500 mb-4"
+              className="text-sm py-2 px-3 w-full md:w-4/5 rounded outline-none bg-transparent border border-gray-500 mb-4"
             />
           </div>
 
@@ -131,7 +130,7 @@ const CreateTask = () => {
               }
               type="text"
               placeholder="Employee Name e.g. Aarav"
-              className="text-sm py-2 px-3 w-4/5 rounded outline-none bg-transparent border border-gray-500 mb-4"
+              className="text-sm py-2 px-3 w-full md:w-4/5 rounded outline-none bg-transparent border border-gray-500 mb-4"
             />
           </div>
 
@@ -147,12 +146,12 @@ const CreateTask = () => {
               }
               type="text"
               placeholder="Design, Development, etc."
-              className="text-sm py-2 px-3 w-4/5 rounded outline-none bg-transparent border border-gray-500 mb-4"
+              className="text-sm py-2 px-3 w-full md:w-4/5 rounded outline-none bg-transparent border border-gray-500 mb-4"
             />
           </div>
         </div>
 
-        <div className="w-2/5 flex flex-col items-start">
+        <div className="w-full md:w-[40%] flex flex-col items-start">
           <h3 className="text-sm mb-1">
             Description
           </h3>

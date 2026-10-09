@@ -14,9 +14,9 @@ const Login = ({ handleLogin }) => {
   };
 
   return (
-    <div className="flex h-screen w-screen items-center justify-center bg-[#111]">
-      <div className="w-[400px] border-2 border-emerald-600 p-10 rounded-xl">
-        <h1 className="text-3xl text-white text-center font-semibold mb-8">
+    <div className="flex min-h-screen w-full items-center justify-center bg-[#111] px-4 py-6">
+      <div className="w-full max-w-[400px] border-2 border-emerald-600 p-5 sm:p-8 md:p-10 rounded-xl">
+        <h1 className="text-2xl sm:text-3xl text-white text-center font-semibold mb-6 sm:mb-8">
           Employee Management
         </h1>
 
@@ -30,7 +30,7 @@ const Login = ({ handleLogin }) => {
             required
             type="email"
             placeholder="Enter your email"
-            className="w-full outline-none bg-transparent text-white border-2 border-emerald-600 rounded-full py-3 px-5 text-lg placeholder:text-gray-400"
+            className="w-full min-w-0 outline-none bg-transparent text-white border-2 border-emerald-600 rounded-full py-3 px-4 sm:px-5 text-base sm:text-lg placeholder:text-gray-400 mb-4"
           />
 
           <input
@@ -39,12 +39,12 @@ const Login = ({ handleLogin }) => {
             required
             type="password"
             placeholder="Enter your password"
-            className="w-full outline-none bg-transparent text-white border-2 border-emerald-600 rounded-full py-3 px-5 text-lg placeholder:text-gray-400 mt-4"
+            className="w-full min-w-0 outline-none bg-transparent text-white border-2 border-emerald-600 rounded-full py-3 px-4 sm:px-5 text-base sm:text-lg placeholder:text-gray-400"
           />
 
           <button
             type="submit"
-            className="text-white bg-emerald-600 hover:bg-emerald-700 rounded-full py-3 px-5 text-lg mt-7 w-full"
+            className="text-white bg-emerald-600 hover:bg-emerald-700 rounded-full py-3 px-5 text-base sm:text-lg mt-6 sm:mt-7 w-full"
           >
             Log In
           </button>

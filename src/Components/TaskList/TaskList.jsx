@@ -9,7 +9,7 @@ const TaskList = ({ data, updateEmployee }) => {
   return (
     <div
       id="tasklist"
-      className="h-[55%] overflow-x-auto flex items-center justify-start gap-5 flex-nowrap w-full py-5 mt-5"
+      className="min-h-[220px] sm:min-h-[260px] lg:h-[55%] overflow-x-auto flex items-stretch justify-start gap-3 sm:gap-5 flex-nowrap w-full py-4 sm:py-5 mt-4 sm:mt-5"
     >
       {data?.tasks?.map((task) => {
         if (task.active) {
