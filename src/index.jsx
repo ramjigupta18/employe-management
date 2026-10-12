@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import AuthProvider from './Components/context/AuthProvider';
+import { Analytics } from '@vercel/analytics/react';
 
 
 
@@ -10,6 +11,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <AuthProvider>
         <App />
+   {/* Vercel Deployment */}
+        <Analytics />
     </AuthProvider>
 
     
